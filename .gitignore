@@ -1,0 +1,10 @@
+.env
+backend/.env
+.venv/
+__pycache__/
+*.pyc
+autojopps.db
+data/
+frontend/node_modules/
+samples/shots/*.png
+.DS_Store

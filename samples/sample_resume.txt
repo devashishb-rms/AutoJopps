@@ -1,0 +1,11 @@
+Devashish Bhattacharjee
+New Delhi, India | devashish.demo@example.com | +91 9810000000
+Chief Technology Officer / Solution Architect | 18+ years
+Summary: Engineering leader and architect. Built fraud and collusion detection at GeM, AML transaction monitoring at Tookitaki, platforms at Flipkart, LinkedIn, Naukri and Microsoft.
+Skills: Python, FastAPI, AWS, Kubernetes, Postgres, Kafka, Microservices, Architecture, Leadership, Machine Learning, NLP, LLM, GenAI, Fraud, AML, Playwright, DevOps
+Experience
+AVP Solution Architecture, GeM (2022-2024): fraud/cartel detection, IAM, procurement platform at national scale.
+Tookitaki (2020-2022): AML transaction monitoring product lead.
+Flipkart, LinkedIn, Naukri.com, IBM, Microsoft (2006-2020): backend platforms, search, data.
+Education: B.Tech and M.Tech Computer Science, IIT Delhi. Executive programs: IIM Bangalore, INSEAD.
+Current CTC: 60 LPA. Notice period: 30 days.
