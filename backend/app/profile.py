@@ -158,8 +158,17 @@ def delete_my_data(user: User = Depends(current_user), db: Session = Depends(get
         except Exception:
             pass
         db.delete(r)
+    app_ids = [a.id for a in db.query(Application).filter_by(user_id=user.id)]
+    for a in db.query(Application).filter_by(user_id=user.id):
+        if a.proof_path:
+            Path(a.proof_path).unlink(missing_ok=True)
+    if app_ids:
+        db.query(RunLog).filter(RunLog.application_id.in_(app_ids)).delete(synchronize_session=False)
     for model in (Profile, AnswerMemory, Recording, Application, Notification, Subscription, Payment):
         db.query(model).filter_by(user_id=user.id).delete()
+    from .config import ROOT
+    for f in (ROOT / "data" / "vault").glob(f"u{user.id}_*.json"):
+        f.unlink(missing_ok=True)
     u = db.get(User, user.id)
     u.onboarding_step = 0
     u.agent_enabled = False

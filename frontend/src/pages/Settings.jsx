@@ -25,7 +25,7 @@ export default function Settings() {
         <h3 style={{ marginTop: 14 }}>Alerts &amp; consent</h3>
         <p className="small">Email: {nf.email || '—'} ({nf.email_consent ? 'consented' : 'off'}) · WhatsApp: {nf.whatsapp || '—'} ({nf.whatsapp_consent ? 'consented' : 'off'}){nf.consent_at && <span className="muted"> · recorded {nf.consent_at.slice(0, 19).replace('T', ' ')} UTC</span>}</p>
         <h3 style={{ marginTop: 14 }}>Your data (DPDP)</h3>
-        <p className="small muted">Delete the resume, profile, answers, recordings, applications and notifications we hold for you. Your sign-in remains so you can start again.</p>
+        <p className="small muted">Delete the resume, profile, answers, recordings, applications, run logs, proof screenshots, portal sessions, subscription and payment records we hold for you. Your sign-in remains so you can start again.</p>
         <button className="btn bad sm" onClick={async () => { if (confirm('Delete all my data?')) { await post('/api/profile/delete-my-data'); await refresh(); toast('Deleted'); nav('/app/onboarding') } }}>Delete my data</button>
       </div>
     </div>
