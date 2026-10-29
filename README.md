@@ -1,6 +1,6 @@
 # AutoJopps — Prototype v1
 
-**AutoJopps** (auto-J-opps) = **Automated Job Opportunities and Job Hops**: receive frequent new job opportunities through automated, fast job applies. Also called AutoJobOpps.
+**AutoJopps** (auto-J-opps) = **Automated New Job Opportunities and Smooth Job-Search Operations and Job Hops**: receive frequent new job opportunities through automated, fast job applies. Also called AutoJobOpps.
 
 Automated Job Opportunities: a human-in-the-loop job-application agent as a self-service SaaS.
 This is the working prototype of the AutoJopps architecture (see the design documents): React UI,
